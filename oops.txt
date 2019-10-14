@@ -1,0 +1,64 @@
+
+
+classes
+obj
+
+
+
+
+
+@abstractmethod
+
+_   ->
+__  -> private  accessed using objname.classnaem.__
+__xx__
+
+
+MRO for multiple inheritance
+
+method resolution order -> Cat(Tiger, Animal) -> Cat tiger ANinmal 
+
+
+Cat(ANinmal, Tiger ) -> gives error , bcoz python gives prefernece to child first.
+
+
+Can't instantiate abstract class A with abstract methods row
+
+
+
+it uses the value of x which is defined in main program (i.e. outside the class ). If x = 20
+is not defined, then NameError will be generated.
+
+
+
+
+
+Multiple constructor using ‘classmethod’
+->
+which can directly call constructor using cls from classmethod, so it is liking multiple constructor.
+
+classmethods can be called using classname.
+
+_
+__ -> not private but used for identification of variables,
+
+if parent and child use same variables, there will be a problem, so __ is used to identify. _ClassName__variable
+
+@property -> if a method is given a @property tag, then it can be called as a attribute.
+
+• @property decorator allows . operator to call the function. Here, self.radius will call the method radius,
+which returns the self._radius. Hence, _radius is stored in the dictionary instead of dict.
+• If we use ‘return self.radius’ instead of ‘return self._radius’, then the @property will result in infinite loop
+as self.property will call the property method, which will return self.property, which results in calling the
+@property again.
+• Further, we can use @property for type checking, validation or performing various operations by writing
+codes in the setter method e.g. change the date to todays date etc.
+
+
+Decorators -> Decorator is a function that creates a wrapper around another function. This wrapper adds some additional
+functionality to existing code.
+
+
+super always calls the immediate superclass
+
+In multiple inheritances, the methods are executed based on the order specified while inheriting the classes.
